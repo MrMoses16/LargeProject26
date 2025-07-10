@@ -5,10 +5,9 @@ const cors = require('cors');
 const app = express();
 
 const MongoClient = require('mongodb').MongoClient;
-const url = process.env.MONGODB_URI;
+const url = "mongodb+srv://Brayden:Project4School@cluster0.bo4aqq5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(url);
 client.connect();
-
 
 app.use(cors());
 app.use(bodyParser.json());
